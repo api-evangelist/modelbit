@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://doc.modelbit.com/deployments/receiving-logs-with-a-webhook/
+spec_type: Webhooks
+summary: >-
+  Modelbit does not publish an AsyncAPI document. Its documented event surface
+  is outbound log delivery: a deployment can push its logs to an HTTP endpoint
+  you control (a webhook), in addition to sending logs to Datadog. Slack alerts
+  are also documented as an outbound notification channel.
+webhooks:
+  - name: deployment-logs
+    direction: outbound
+    transport: http
+    description: >-
+      Receiving logs with a webhook — a deployment posts its runtime logs to a
+      user-provided HTTP endpoint so log output can be forwarded into external
+      systems.
+    docs: https://doc.modelbit.com/deployments/receiving-logs-with-a-webhook/
+  - name: slack-alerts
+    direction: outbound
+    transport: slack
+    description: >-
+      Slack alerts fire on deployment events/conditions into a configured Slack
+      channel.
+    docs: https://doc.modelbit.com/deployments/alerts/
+  - name: datadog-logs
+    direction: outbound
+    transport: http
+    description: Send deployment logs to Datadog.
+    docs: https://doc.modelbit.com/deployments/sending-logs-to-datadog/
+notes: >-
+  No inbound webhook / event-subscription API is documented. This is a
+  log/alert forwarding surface, captured as type Webhooks; no AsyncAPI spec is
+  fabricated.

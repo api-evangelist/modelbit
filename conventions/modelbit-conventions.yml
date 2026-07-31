@@ -1,0 +1,51 @@
+generated: '2026-07-20'
+method: searched
+source: https://doc.modelbit.com/deployments/calling-the-rest-api/
+docs: https://doc.modelbit.com/deployments/calling-the-rest-api/
+summary: >-
+  Cross-cutting request/response conventions for Modelbit deployment REST
+  inference endpoints, harvested from the Modelbit documentation.
+authentication:
+  style: api-key
+  header: Authorization
+  docs: https://doc.modelbit.com/deployments/calling-the-rest-api/using-api-keys/
+endpoint:
+  method: POST
+  url_pattern: https://<your-workspace-url>/v1/<deployment>/{version}
+  version_selector: >-
+    Path segment after the deployment name selects the version: `latest` always
+    calls the most recent version; a numeric version (e.g. `/v1/example/5`)
+    pins a specific deployment version; named version aliases can also be
+    created in Modelbit and used in place of the version.
+  content_type: application/json
+request_envelope:
+  single: '{"data": <inference-request>}'
+  batch: '{"data": [[1, <request-1>], [2, <request-2>]]}'
+  notes: >-
+    Single inference passes one request object under `data`. Batch inference
+    passes a list of [id, request] pairs under `data` to retrieve many
+    inferences in one REST call; responses are keyed back to the supplied ids.
+async:
+  supported: true
+  docs: https://doc.modelbit.com/deployments/calling-the-rest-api/async-rest-responses/
+  notes: >-
+    Async REST responses are supported for long-running inference so callers do
+    not hold a synchronous connection. Per-request inference timeouts and large
+    REST responses are also documented.
+versioning:
+  scheme: url-path-version
+  notes: >-
+    Deployments are versioned; every prior version is retained and callable.
+    `/latest` tracks the newest version, numeric segments pin a version, and
+    aliases map stable names to versions.
+idempotency:
+  supported: false
+  notes: No idempotency-key header is documented for Modelbit inference requests.
+error_envelope:
+  notes: >-
+    Errors are returned as JSON from the inference endpoint. No RFC 9457
+    problem+json contract is documented; error shape is per-deployment.
+cross_links:
+  authentication: authentication/modelbit-authentication.yml
+  webhooks: asyncapi/modelbit-webhooks.yml
+  lifecycle: lifecycle/modelbit-lifecycle.yml

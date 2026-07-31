@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/modelbit/#history
+summary: >-
+  Modelbit does not publish a dated product changelog page (docs host is
+  currently offline). The closest dated release history is the modelbit Python
+  SDK on PyPI, whose upload dates track SDK evolution. 339 total releases were
+  published; the most recent is v0.44.3 (2025-06-28).
+scheme: semver
+current_version: 0.44.3
+entries:
+  - version: 0.44.3
+    date: '2025-06-28'
+  - version: 0.44.2
+    date: '2025-06-23'
+  - version: 0.44.1
+    date: '2025-05-06'
+  - version: 0.44.0
+    date: '2025-04-15'
+  - version: 0.43.11
+    date: '2025-02-26'
+  - version: 0.43.10
+    date: '2025-02-12'
+  - version: 0.43.9
+    date: '2025-02-07'
+  - version: 0.43.8
+    date: '2025-01-14'
+notes: >-
+  Per-release notes are not published to PyPI; only version numbers and upload
+  dates are captured here (no changelog text fabricated). No SDK release has
+  been published since 2025-06-28.

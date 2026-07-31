@@ -1,0 +1,31 @@
+# Modelbit
+
+> Modelbit helps you rapidly deploy and manage ML models with modern MLOps features. Train and register a model in a notebook, deploy a Python function with the modelbit Python SDK, and Modelbit packages the environment and serves the model as a versioned REST inference endpoint (single and batch, sync and async), with a model registry, datasets/feature stores, training jobs, Git-backed deployments, warehouse integration (Snowflake/dbt), and log/alert forwarding.
+
+Note: As of 2026-07-20 the marketing site (www.modelbit.com) returns a Framer "Site Not Found" and the documentation host doc.modelbit.com does not resolve. Links below are the provider's canonical URLs (still referenced by the current PyPI package); the archived documentation is available via the Internet Archive.
+
+## Platform
+- [Modelbit](https://www.modelbit.com/): ML model deployment and MLOps platform (marketing site)
+- [Documentation](https://doc.modelbit.com/): product and API-reference documentation (SDK method reference under /api-reference/)
+- [Calling the REST API](https://doc.modelbit.com/deployments/calling-the-rest-api/): deployment inference endpoint, single + batch requests
+- [Using API keys](https://doc.modelbit.com/deployments/calling-the-rest-api/using-api-keys/): Authorization-header API keys for deployments
+
+## API
+- REST inference endpoint: `POST https://<your-workspace-url>/v1/<deployment>/latest` (or `/<version>`); body `{"data": <inference-request>}` (single) or `{"data": [[1, req1], [2, req2]]}` (batch)
+- Auth: API key in the `Authorization` header (created in Modelbit Settings)
+- Async responses, per-request timeouts, and large responses supported
+
+## SDK
+- [modelbit on PyPI](https://pypi.org/project/modelbit/): official first-party Python SDK (`pip install modelbit`), current v0.44.3
+
+## Repo artifacts
+- [Packages](https://raw.githubusercontent.com/api-evangelist/modelbit/refs/heads/main/packages/modelbit-packages.yml)
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/modelbit/refs/heads/main/authentication/modelbit-authentication.yml)
+- [Conventions](https://raw.githubusercontent.com/api-evangelist/modelbit/refs/heads/main/conventions/modelbit-conventions.yml)
+- [Webhooks](https://raw.githubusercontent.com/api-evangelist/modelbit/refs/heads/main/asyncapi/modelbit-webhooks.yml)
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/modelbit/refs/heads/main/lifecycle/modelbit-lifecycle.yml)
+- [Changelog](https://raw.githubusercontent.com/api-evangelist/modelbit/refs/heads/main/changelog/modelbit-changelog.yml)
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/modelbit/refs/heads/main/security/modelbit-domain-security.yml)
+
+## GitHub
+- [Modelbit on GitHub](https://github.com/modelbit): organization (no public repositories)

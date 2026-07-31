@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/modelbit/
+packages:
+  - language: python
+    registry: pypi
+    name: modelbit
+    url: https://pypi.org/project/modelbit/
+    install: pip install modelbit
+    version: 0.44.3
+    official: true
+    summary: >-
+      Modelbit helps you rapidly deploy and manage ML models with modern MLOps
+      features. The Python package is the primary interface: train and register
+      models in a notebook, then deploy a Python function with mb.deploy(),
+      which packages the environment and exposes the model as a versioned REST
+      inference endpoint.
+    docs: https://doc.modelbit.com/api-reference/
+notes: >-
+  Only the first-party Python SDK is published to a public registry. No npm,
+  Maven, NuGet, RubyGems, Packagist, crates.io or Go module for Modelbit was
+  found (registry lookups returned 404 / not-found). The deployed model REST
+  endpoint is language-agnostic (callable via curl/HTTP from any language).

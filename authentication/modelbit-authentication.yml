@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://doc.modelbit.com/deployments/calling-the-rest-api/
+docs: https://doc.modelbit.com/deployments/calling-the-rest-api/using-api-keys/
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  notes: >-
+    Modelbit deployments are called as REST inference endpoints. Access can be
+    restricted with API keys created in the Settings area of the Modelbit
+    workspace; the key is sent to the deployment in the HTTP Authorization
+    header. The Python SDK (modelbit) authenticates the developer session via an
+    interactive login flow (mb.login()) rather than a static key.
+schemes:
+  - name: DeploymentApiKey
+    type: apiKey
+    in: header
+    parameter_name: Authorization
+    description: >-
+      API key created in Modelbit Settings and passed in the Authorization
+      header of REST inference requests to a deployment. Keys can be scoped to
+      limit access to deployed models.
+    source: https://doc.modelbit.com/deployments/calling-the-rest-api/using-api-keys/
+  - name: SdkLogin
+    type: session
+    description: >-
+      The modelbit Python package establishes an authenticated session via
+      mb.login() (browser/token based) for training-job, dataset, model-registry
+      and deployment operations from a notebook or CI environment.
+    source: https://doc.modelbit.com/api-reference/login/

@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://doc.modelbit.com/deployments/calling-the-rest-api/
+versioning:
+  scheme: deployment-version-in-url
+  current: v1
+  docs: https://doc.modelbit.com/deployments/calling-the-rest-api/
+  notes: >-
+    The REST API is served under a `/v1/` path prefix. Individual deployments
+    are independently versioned: every deployment version is retained and
+    remains callable, `/latest` tracks the newest version, numeric segments pin
+    a version, and named version aliases can be mapped to versions. New versions
+    can be evaluated before promotion (evaluating-new-versions).
+  evaluation_docs: https://doc.modelbit.com/deployments/evaluating-new-versions/
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal deprecation policy or RFC 8594 Sunset/Deprecation header support is documented.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+notes: >-
+  As of this pass the Modelbit marketing site (Framer) returns "Site Not Found"
+  and the docs host doc.modelbit.com does not resolve; no public status page was
+  located. The AWS-hosted app/api.modelbit.com infrastructure and the PyPI SDK
+  (v0.44.3) remain live. Versioning details are from the archived documentation.
