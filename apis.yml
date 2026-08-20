@@ -35,6 +35,15 @@ created: '2026-07-17'
 modified: '2026-07-20'
 tags:
 - Company
+- Artificial Intelligence
+- Machine-Learning
+- MLOps
+- Model Deployment
+- Model Inference
+- Data Science
+- Model Registry
+tags_raw:
+- Company
 - Ai
 - Machine Learning
 - MLOps
@@ -51,6 +60,10 @@ apis:
   humanURL: https://doc.modelbit.com/deployments/calling-the-rest-api/
   baseURL: https://app.modelbit.com
   tags:
+  - Machine-Learning
+  - Inference
+  - MLOps
+  tags_raw:
   - Machine Learning
   - Inference
   - MLOps
