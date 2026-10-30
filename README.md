@@ -64,6 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Modelbit is a company surfaced as a portfolio company of homebrew and added to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.
+Modelbit is an MLOps platform (backed by Homebrew) that lets data scientists rapidly deploy and manage machine-learning models. You train and register a model in a notebook, then deploy a Python function with the first-party modelbit Python SDK; Modelbit packages the environment and serves the model as a versioned REST inference endpoint supporting single and batch requests, sync and async responses, per-request timeouts, and API-key access control. The platform adds a model registry, datasets and feature stores, training jobs, Git-backed deployments, warehouse integration (Snowflake, dbt), custom Python environments, and log/alert forwarding to webhooks, Datadog, and Slack.
 
-Backed by: homebrew — https://www.modelbit.com
+**Areas:** Company · Artificial Intelligence · Machine Learning · MLOps · Model Deployment · Model Inference · Data Science · Model Registry
+
+## Modelbit on APIs.io
+
+Everything profiled for Modelbit is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/modelbit/](https://apis.io/providers/modelbit/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Modelbit Deployment REST API](https://apis.io/apis/modelbit/modelbit-deployment-rest-api/) — Every Modelbit deployment is exposed as a versioned REST inference endpoint. POST an inference request (single or batch) to the deployment URL and receive…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Modelbit Webhooks](https://apis.io/asyncapis/modelbit/modelbit-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Modelbit Authentication](https://apis.io/security/modelbit/modelbit-authentication/)
+- [Modelbit Domain Security](https://apis.io/security/modelbit/modelbit-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.modelbit.com)
+- [Documentation](https://doc.modelbit.com/)
+- [Getting started](https://doc.modelbit.com/api-reference/setup/)
+- [API reference](https://doc.modelbit.com/api-reference/)
+- [Sign up](https://app.modelbit.com/)
+- [GitHub](https://github.com/modelbit)
+
+## API Evangelist rating
+
+**Kin Score 27.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 6.6 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/modelbit/](https://apis.io/providers/modelbit/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Modelbit: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/modelbit/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
